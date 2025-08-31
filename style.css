@@ -1,0 +1,82 @@
+/* --- Base & layout --- */
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+  color: #0f172a;
+  /* Blue → white background */
+  background: linear-gradient(180deg, #1e3a8a 0%, #3b82f6 40%, #ffffff 100%);
+  background-attachment: fixed;
+}
+
+/* Center every section and improve readability */
+section {
+  max-width: 900px;
+  width: min(900px, 92%);
+  margin: 28px auto;
+  padding: 40px 28px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);   /* see gradient through */
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
+}
+
+/* Headings */
+h1, h2, h3 { margin-top: 0; color: #0f172a; }
+#Home h1 { font-size: clamp(2rem, 2.5vw + 1rem, 3rem); margin-bottom: 8px; }
+
+/* Home intro */
+#Home p { max-width: 60ch; margin: 0 auto 16px; }
+#Home img {
+  display: block;
+  margin: 16px auto 0;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255,255,255,0.9);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* Skills list centered but tidy */
+#skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;   /* keeps bullets aligned while centered */
+  text-align: left;
+}
+
+/* Projects: catch both of your project divs */
+#projects > div {
+  margin-bottom: 24px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(15,23,42,0.08);
+  background: rgba(255, 255, 255, 0.92);
+}
+#projects img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 12px auto;
+  border-radius: 12px;
+}
+
+/* Form */
+form { max-width: 520px; margin: 0 auto; }
+label { display: block; font-weight: 600; margin-top: 12px; }
+input, textarea, button {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font: inh;
+}
