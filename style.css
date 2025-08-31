@@ -52,6 +52,19 @@ h1, h2, h3 { margin-top: 0; color: #0f172a; }
   text-align: left;
 }
 
+
+#skills li {
+  margin-bottom: 10px;   /* spacing between lines */
+  font-size: 1.1em;      /* slightly larger text */
+}
+
+.skill-label {    /* makes Technical / Non-Technical italic */
+  font-weight: bold;     /* adds boldness for visibility */
+  color: #333;           /* darker shade */
+  margin-right: 5px;     /* small gap after the label */
+}
+
+
 /* Projects: catch both of your project divs */
 #projects > div {
   margin-bottom: 24px;
